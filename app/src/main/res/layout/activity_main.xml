@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/inner_frame_layout_padding"
+        app:layout_boxedEdges="all">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="140dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="4dp"
+            android:gravity="center"
+            android:text="@string/well_done"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.012" />
+
+        <ImageView
+            android:id="@+id/hipFlexor1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#EF0505"
+            android:src="@android:drawable/btn_star_big_on"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <ImageView
+            android:id="@+id/hipFlexor2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#3F51B5"
+            android:src="@android:drawable/btn_star_big_on"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <ImageView
+            android:id="@+id/thighStretch1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#2196F3"
+            android:src="@android:drawable/btn_star_big_on"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <ImageView
+            android:id="@+id/thighStretch2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#FF9800"
+            android:src="@android:drawable/btn_star_big_on"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <ImageView
+            android:id="@+id/hamstringStretch1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#4CAF50"
+            android:src="@android:drawable/btn_star_big_on"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <ImageView
+            android:id="@+id/hamstringStretch2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#E91E63"
+            android:src="@android:drawable/btn_star_big_on"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <ImageView
+            android:id="@+id/iliotibialBandStretch1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#009688"
+            android:src="@android:drawable/btn_star_big_on"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <ImageView
+            android:id="@+id/iliotibialBandStretch2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#FFC107"
+            android:src="@android:drawable/btn_star_big_on"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <ImageView
+            android:id="@+id/calfStretch1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#00BCD4"
+            android:src="@android:drawable/btn_star_big_on"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <ImageView
+            android:id="@+id/calfStretch2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#673AB7"
+            android:src="@android:drawable/btn_star_big_on"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <ImageView
+            android:id="@+id/upperBodyStretch1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#4CAF50"
+            android:src="@android:drawable/btn_star_big_on"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <ImageView
+            android:id="@+id/upperBodyStretch2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#FF9800"
+            android:src="@android:drawable/btn_star_big_on"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <ImageView
+            android:id="@+id/lowerBackStretch1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#2196F3"
+            android:src="@android:drawable/btn_star_big_on"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <ImageView
+            android:id="@+id/lowerBackStretch2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#009688"
+            android:src="@android:drawable/btn_star_big_on"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="6dp" />
+
+        <ImageView
+            android:id="@+id/gluteStretch1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#9C27B0"
+            android:src="@android:drawable/btn_star_big_on"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="6dp" />
+
+        <ImageView
+            android:id="@+id/gluteStretch2"
+            android:layout_width="80dp"
+            android:layout_height="81dp"
+            android:background="#FF9800"
+            android:src="@android:drawable/btn_star_big_on"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="45dp"
+            tools:src="@tools:sample/avatars[1]" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="upperBodyStretch2,calfStretch1,gluteStretch1,lowerBackStretch1,thighStretch1,iliotibialBandStretch2,iliotibialBandStretch1,hipFlexor2,lowerBackStretch2,hamstringStretch1,hipFlexor1,gluteStretch2,thighStretch2,hamstringStretch2,upperBodyStretch1,calfStretch2"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="127dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginBottom="9dp"
+            android:text="Start Stretches"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="72dp"
+            android:layout_height="6dp"
+            android:layout_marginBottom="12dp"
+            android:text=" "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.wear.widget.BoxInsetLayout>
