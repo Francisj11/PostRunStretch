@@ -30,7 +30,7 @@ The stretches come from an unlisted CouchTo5k video, so to save having to look u
   
 - [x] Improve the sounds effects which are currently voice recordings :)
 
-- [ ] Add quit and restart buttons at the end.
+- [x] Add ~~quit~~ and restart buttons at the end.
 
 - [ ] Add ability to pause by touching screen during a stretch
 

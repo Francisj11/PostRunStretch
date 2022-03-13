@@ -2,8 +2,8 @@ package com.example.postrunstretch
 //sound
 import android.media.AudioManager
 import android.media.SoundPool
-
 //sound
+
 import android.app.Activity
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -102,13 +102,17 @@ class MainActivity : Activity() {
                     }
                     else
                     {
-                        // make everything invisible
+                        // Make everything invisible
                         val id1    = listOfStretchImages.last()
                         val image1 = findViewById<ImageView>(id1)
                         image1.visibility    = View.INVISIBLE
                         tada?.play(soundId, 1F, 1F, 0, 0, 1F)
                         topTextView.text  = "You're finished!"
                         bottomTextView.visibility = View.INVISIBLE
+
+                        // Make restart button visible
+                        button.visibility = View.VISIBLE
+                        button.text = "Restart Stretches"
                     }
                 }
             }.start()
