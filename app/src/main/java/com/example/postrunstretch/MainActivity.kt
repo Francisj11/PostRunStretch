@@ -38,7 +38,6 @@ class MainActivity : Activity() {
         topTextView.text = "Lets GO!"
 
         val button: Button = findViewById(R.id.button)
-        //val hipFlexor1: ImageView = findViewById(R.id.hipFlexor1)
 
         var listOfStretchImages = arrayOf(
             R.id.hipFlexor1,
@@ -69,7 +68,7 @@ class MainActivity : Activity() {
 
             shortbing?.play(soundId, 1F, 1F, 0, 0, 1F)
             bottomTextView.visibility = View.VISIBLE
-            bottomTextView.text = "Stretch no. 1 out of " + listOfStretchImages.size + "."
+            bottomTextView.text = "Stretch no. 1 of " + listOfStretchImages.size + "."
 
             // Start a timer
             object : CountDownTimer(2000, 1000)
@@ -78,15 +77,11 @@ class MainActivity : Activity() {
                 override fun onTick(millisUntilFinished: Long)
                 {
                     topTextView.text = (millisUntilFinished / 1000).toString() + "s."
-                    bottomTextView.text = "Stretch no. " + (iterations+1).toString() + " out of " + listOfStretchImages.size + "."
+                    bottomTextView.text = "Stretch no. " + (iterations+1).toString() + " of " + listOfStretchImages.size + "."
                 }
 
                 override fun onFinish()
                 {
-
-
-                    // display count
-
                     // Swap the visibility of current image with next
                     val id1 = listOfStretchImages[iterations]
                     if ((iterations + 1) < listOfStretchImages.size)
