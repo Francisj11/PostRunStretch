@@ -25,9 +25,9 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
 
         shortbing = SoundPool(6, AudioManager.STREAM_MUSIC, 0)
-        shortbing!!.load(baseContext, R.raw.shortbing, 1)
+        shortbing!!.load(baseContext, R.raw.shortbing_enhanced, 1)
         tada = SoundPool(6, AudioManager.STREAM_MUSIC, 0)
-        tada!!.load(baseContext, R.raw.tada, 1)
+        tada!!.load(baseContext, R.raw.tada_enhanced, 1)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
