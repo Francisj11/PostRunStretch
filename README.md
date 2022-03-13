@@ -28,7 +28,7 @@ The stretches come from an unlisted CouchTo5k video, so to save having to look u
 
 - [ ] The stretches currently run for 1 second each for testing purposes but they should be 30 seconds.
   
-- [ ] Improve the sounds effects which are currently voice recordings :)
+- [x] Improve the sounds effects which are currently voice recordings :)
 
 - [ ] Add quit and restart buttons at the end.
 
