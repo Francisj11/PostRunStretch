@@ -15,7 +15,8 @@ import com.example.postrunstretch.databinding.ActivityMainBinding
 
 class MainActivity : Activity() {
 
-    private var soundPool: SoundPool? = null
+    private var shortbing: SoundPool? = null
+    private var tada: SoundPool? = null
     private val soundId = 1
 
     private lateinit var binding: ActivityMainBinding
@@ -23,19 +24,21 @@ class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        soundPool = SoundPool(6, AudioManager.STREAM_MUSIC, 0)
-        soundPool!!.load(baseContext, R.raw.shortbing, 1)
+        shortbing = SoundPool(6, AudioManager.STREAM_MUSIC, 0)
+        shortbing!!.load(baseContext, R.raw.shortbing, 1)
+        tada = SoundPool(6, AudioManager.STREAM_MUSIC, 0)
+        tada!!.load(baseContext, R.raw.tada, 1)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val textView: TextView = findViewById(R.id.text)
-        val textView2: TextView = findViewById(R.id.textView2)
+        val topTextView: TextView = findViewById(R.id.topTextView)
+        val bottomTextView: TextView = findViewById(R.id.bottomTextView)
 
-        textView.text = "Lets GO!"
+        topTextView.text = "Lets GO!"
 
         val button: Button = findViewById(R.id.button)
-        val hipFlexor1: ImageView = findViewById(R.id.hipFlexor1)
+        //val hipFlexor1: ImageView = findViewById(R.id.hipFlexor1)
 
         var listOfStretchImages = arrayOf(
             R.id.hipFlexor1,
@@ -64,48 +67,55 @@ class MainActivity : Activity() {
             val image1 = findViewById<ImageView>(id1)
             image1.visibility = View.VISIBLE
 
-            soundPool?.play(soundId, 1F, 1F, 0, 0, 1F)
+            shortbing?.play(soundId, 1F, 1F, 0, 0, 1F)
+            bottomTextView.visibility = View.VISIBLE
+            bottomTextView.text = "Stretch no. 1 out of " + listOfStretchImages.size + "."
 
             // Start a timer
             object : CountDownTimer(2000, 1000)
             {
                 var iterations = 0
-                    override fun onTick(millisUntilFinished: Long)
-                    {
-                        textView.text = (millisUntilFinished / 1000).toString() + "s."
-                    }
+                override fun onTick(millisUntilFinished: Long)
+                {
+                    topTextView.text = (millisUntilFinished / 1000).toString() + "s."
+                    bottomTextView.text = "Stretch no. " + (iterations+1).toString() + " out of " + listOfStretchImages.size + "."
+                }
 
-                    override fun onFinish()
+                override fun onFinish()
+                {
+
+
+                    // display count
+
+                    // Swap the visibility of current image with next
+                    val id1 = listOfStretchImages[iterations]
+                    if ((iterations + 1) < listOfStretchImages.size)
+                    {
+                        val id2 = listOfStretchImages[iterations+1]
+                        val image2 = findViewById<ImageView>(id2)
+                        image2.visibility = View.VISIBLE
+                    }
+                    val image1 = findViewById<ImageView>(id1)
+                    image1.visibility = View.INVISIBLE
+                    iterations++
+
+                    if (iterations < (listOfStretchImages.size))
                     {
                         // Play sound
-                        soundPool?.play(soundId, 1F, 1F, 0, 0, 1F)
-
-                        // display count
-                        textView2.text = "Stretch no. " + (iterations+1).toString() + " out of " + listOfStretchImages.size + "."
-
-                        // Swap the visibility of current image with next
-                        val id1 = listOfStretchImages[iterations]
-                        val id2 = listOfStretchImages[iterations+1]
-                        val image1 = findViewById<ImageView>(id1)
-                        val image2 = findViewById<ImageView>(id2)
-                        image1.visibility = View.INVISIBLE
-                        image2.visibility = View.VISIBLE
-                        iterations++
-
-                        if (iterations < (listOfStretchImages.size - 1))
-                        {
-                            this.start()
-                        }
-                        else
-                        {
-                            // make everything invisible
-                            val id1    = listOfStretchImages.last()
-                            val image1 = findViewById<ImageView>(id1)
-                            image1.visibility    = View.INVISIBLE
-                            textView.text  = "You're finished!"
-                            textView2.visibility = View.INVISIBLE
-                        }
+                        shortbing?.play(soundId, 1F, 1F, 0, 0, 1F)
+                        this.start()
                     }
+                    else
+                    {
+                        // make everything invisible
+                        val id1    = listOfStretchImages.last()
+                        val image1 = findViewById<ImageView>(id1)
+                        image1.visibility    = View.INVISIBLE
+                        tada?.play(soundId, 1F, 1F, 0, 0, 1F)
+                        topTextView.text  = "You're finished!"
+                        bottomTextView.visibility = View.INVISIBLE
+                    }
+                }
             }.start()
         }
     }

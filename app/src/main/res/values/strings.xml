@@ -5,4 +5,5 @@
     values-round/strings.xml for round devices.
     -->
     <string name="well_done">Well done for going for a run!</string>
+    <string name="empty">""</string>
 </resources>
