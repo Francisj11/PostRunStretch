@@ -25,7 +25,7 @@ The stretches come from an unlisted CouchTo5k video, so to save having to look u
 1. lowerBackStretch2
 1. [gluteStretch1](https://c8.alamy.com/comp/JK15TY/runner-stretching-gluteus-maximus-muscles-knee-to-chest-buttocks-stretch-JK15TY.jpg)
 1. gluteStretch2
-  £
+
 - [ ] The stretches currently run for 1 second each for testing purposes but they should be 30 seconds.
   
 - [ ] Improve the sounds effects which are currently voice recordings :)
