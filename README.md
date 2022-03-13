@@ -19,7 +19,7 @@ The stretches come from an unlisted CouchTo5k video, so to save having to look u
 1. iliotibialBandStretch2
 1. [calfStretch1](https://media.istockphoto.com/vectors/-vector-id1147247749?k=20&m=1147247749&s=612x612&w=0&h=hpa5pn8rVQ1OmYfs0y-Ber_niiNQl351YFM8QPB4fZw=)
 1. calfStretch2
-1. [upperBodyStretch1](https://media.istockphoto.com/vectors/back-stretching-woman-doing-exercise-for-back-pain-vector-id1151521577?k=20&m=1151521577&s=612x612&w=0&h=MSeK3loPiIs_2SOqz-Fg_TDOKtMPL4--uuyPMSH79RA=) Note: Top right icon in this image is the desired stretch.
+1. [upperBodyStretch1](https://media.istockphoto.com/vectors/back-stretching-woman-doing-exercise-for-back-pain-vector-id1151521577?k=20&m=1151521577&s=612x612&w=0&h=MSeK3loPiIs_2SOqz-Fg_TDOKtMPL4--uuyPMSH79RA=) Note: Top left icon in this image is the desired stretch.
 1. upperBodyStretch2
 1. [lowerBackStretch1](https://previews.123rf.com/images/comotomo/comotomo1901/comotomo190100512/126198327-knee-to-chest-lower-back-stretch-sport-exersice-silhouettes-of-woman-doing-exercise-workout-training.jpg)
 1. lowerBackStretch2
