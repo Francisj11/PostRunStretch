@@ -34,5 +34,7 @@ The stretches come from an unlisted CouchTo5k video, so to save having to look u
 
 - [ ] Add ability to pause by touching screen during a stretch
 
+- [ ] Add countdown animation which is the circumference of the screen, reducing by 12 degrees per second.
+
 - [ ] Publish to PlayStore https://developer.android.com/distribute/best-practices/launch/distribute-wear
 
