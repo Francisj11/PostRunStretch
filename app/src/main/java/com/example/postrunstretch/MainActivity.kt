@@ -68,16 +68,16 @@ class MainActivity : Activity() {
 
             shortbing?.play(soundId, 1F, 1F, 0, 0, 1F)
             bottomTextView.visibility = View.VISIBLE
-            bottomTextView.text = "Stretch no. 1 of " + listOfStretchImages.size + "."
+            bottomTextView.text = "Stretch 1/" + listOfStretchImages.size
 
             // Start a timer
-            object : CountDownTimer(2000, 1000)
+            object : CountDownTimer(10000, 1000)
             {
                 var iterations = 0
                 override fun onTick(millisUntilFinished: Long)
                 {
                     topTextView.text = (millisUntilFinished / 1000).toString() + "s."
-                    bottomTextView.text = "Stretch no. " + (iterations+1).toString() + " of " + listOfStretchImages.size + "."
+                    bottomTextView.text = "Stretch " + (iterations+1).toString() + "/" + listOfStretchImages.size
                 }
 
                 override fun onFinish()
