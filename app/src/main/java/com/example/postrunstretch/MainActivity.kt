@@ -71,7 +71,7 @@ class MainActivity : Activity() {
             bottomTextView.text = "Stretch 1/" + listOfStretchImages.size
 
             // Start a timer
-            object : CountDownTimer(10000, 1000)
+            object : CountDownTimer(30000, 1000)
             {
                 var iterations = 0
                 override fun onTick(millisUntilFinished: Long)

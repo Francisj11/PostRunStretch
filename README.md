@@ -8,7 +8,7 @@ The stretches come from an unlisted CouchTo5k video, so to save having to look u
 
 # TODO:
 
-- [ ] Get stretch icons in 80x80dp, possibly from fiverr, for the different stretches which include:
+- [x] Get stretch icons in 80x80dp, possibly from fiverr, for the different stretches which include:
 1. [hipFlexor1](https://thumbs.dreamstime.com/b/man-doing-half-kneeling-hip-flexor-stretch-exercise-man-doing-half-kneeling-hip-flexor-stretch-exercise-flat-vector-illustration-220734795.jpg)
 1. hipFlexor2
 1. [thighStretch1](https://thumbs.dreamstime.com/z/standing-quadriceps-stretch-sport-exersice-silhouettes-woman-doing-exercise-workout-training-vector-illustration-standing-136707526.jpg)
@@ -26,7 +26,7 @@ The stretches come from an unlisted CouchTo5k video, so to save having to look u
 1. [gluteStretch1](https://c8.alamy.com/comp/JK15TY/runner-stretching-gluteus-maximus-muscles-knee-to-chest-buttocks-stretch-JK15TY.jpg)
 1. gluteStretch2
 
-- [ ] The stretches currently run for 1 second each for testing purposes but they should be 30 seconds.
+- [x] The stretches currently run for 1 second each for testing purposes but they should be 30 seconds.
   
 - [x] Improve the sounds effects which are currently voice recordings :)
 
