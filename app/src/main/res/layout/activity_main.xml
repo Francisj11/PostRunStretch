@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/box_inset_layout_padding"
+    android:background="@color/dark_grey"
     tools:context=".MainActivity"
     tools:deviceIds="wear">
 
@@ -12,54 +13,58 @@
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="@dimen/inner_frame_layout_padding"
+        android:background="@color/dark_grey"
         app:layout_boxedEdges="all">
 
         <TextView
             android:id="@+id/topTextView"
-            android:layout_width="140dp"
+            android:layout_width="100pt"
             android:layout_height="39dp"
-            android:layout_marginTop="-5dp"
+            android:layout_marginTop="0dp"
             android:gravity="center"
             android:text="@string/well_done"
-            android:textSize="10sp"
+            android:textSize="11sp"
             android:visibility="visible"
+            android:fontFamily="sans-serif-medium"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_default="percent" />
 
         <ImageView
-            android:id="@+id/upperBodyStretch2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="#FF9800"
+            android:id="@+id/hipFlexor1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/dark_grey"
             android:gravity="center"
-            android:src="@drawable/greencirclethigh"
+            android:src="@drawable/hipflexor1"
             android:visibility="invisible"
+            android:tint="@color/green"
             app:layout_constraintLeft_toRightOf="@id/topTextView"
             app:layout_constraintRight_toLeftOf="@id/topTextView"
             app:layout_constraintTop_toBottomOf="@id/topTextView" />
 
         <ImageView
-            android:id="@+id/iliotibialBandStretch1"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="#009688"
-            android:src="@drawable/greencirclethigh"
+            android:id="@+id/hipFlexor2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/dark_grey"
+            android:src="@drawable/hipflexor2"
             android:visibility="invisible"
+            android:tint="@color/green"
             app:layout_constraintLeft_toRightOf="@id/topTextView"
             app:layout_constraintRight_toLeftOf="@id/topTextView"
             app:layout_constraintTop_toBottomOf="@id/topTextView"
             app:layout_constraintTop_toTopOf="@+id/hamstringStretch2" />
 
         <ImageView
-            android:id="@+id/hamstringStretch2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="#E91E63"
-            android:src="@drawable/greencirclethigh"
+            android:id="@+id/thighStretch1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/dark_grey"
+            android:src="@drawable/thigh_stretch1"
             android:visibility="invisible"
+            android:tint="@color/green"
             app:layout_constraintLeft_toRightOf="@id/topTextView"
             app:layout_constraintRight_toLeftOf="@id/topTextView"
             app:layout_constraintTop_toBottomOf="@id/topTextView"
@@ -67,146 +72,158 @@
 
         <ImageView
             android:id="@+id/thighStretch2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="#FF9800"
-            android:src="@drawable/greencirclethigh"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/dark_grey"
+            android:src="@drawable/thigh_stretch2"
             android:visibility="invisible"
+            android:tint="@color/green"
             app:layout_constraintLeft_toRightOf="@id/topTextView"
             app:layout_constraintRight_toLeftOf="@id/topTextView"
             app:layout_constraintTop_toBottomOf="@id/topTextView"
             app:layout_constraintTop_toTopOf="@+id/calfStretch2" />
 
         <ImageView
-            android:id="@+id/calfStretch2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="#673AB7"
-            android:src="@drawable/greencirclethigh"
+            android:id="@+id/hamstringStretch1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/dark_grey"
+            android:src="@drawable/hamstringstretch1"
             android:visibility="invisible"
+            android:tint="@color/green"
             app:layout_constraintLeft_toRightOf="@id/topTextView"
             app:layout_constraintRight_toLeftOf="@id/topTextView"
             app:layout_constraintTop_toBottomOf="@id/topTextView"
-            app:layout_constraintTop_toTopOf="@+id/hamstringStretch1" />
+            app:layout_constraintTop_toTopOf="@+id/hamstringStretch2" />
 
         <ImageView
-            android:id="@+id/gluteStretch2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="#FF9800"
-            android:src="@drawable/greencirclethigh"
+            android:id="@+id/hamstringStretch2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/dark_grey"
+            android:src="@drawable/hamstringstretch2"
             android:visibility="invisible"
+            android:tint="@color/green"
             app:layout_constraintLeft_toRightOf="@id/topTextView"
             app:layout_constraintRight_toLeftOf="@id/topTextView"
             app:layout_constraintTop_toBottomOf="@id/topTextView"
             tools:src="@tools:sample/avatars[1]" />
 
         <ImageView
-            android:id="@+id/hamstringStretch1"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="#4CAF50"
-            android:src="@drawable/greencirclethigh"
+            android:id="@+id/iliotibialBandStretch1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/dark_grey"
+            android:src="@drawable/iliotibial_band_stretch1"
             android:visibility="invisible"
+            android:tint="@color/green"
             app:layout_constraintLeft_toRightOf="@id/topTextView"
             app:layout_constraintRight_toLeftOf="@id/topTextView"
             app:layout_constraintTop_toBottomOf="@id/topTextView"
             app:layout_constraintTop_toTopOf="@+id/calfStretch1" />
 
         <ImageView
-            android:id="@+id/calfStretch1"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="#00BCD4"
-            android:src="@drawable/greencirclethigh"
-            android:visibility="invisible"
-            app:layout_constraintLeft_toRightOf="@id/topTextView"
-            app:layout_constraintRight_toLeftOf="@id/topTextView"
-            app:layout_constraintTop_toBottomOf="@id/topTextView" />
-
-        <ImageView
-            android:id="@+id/lowerBackStretch2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="#009688"
-            android:src="@drawable/greencirclethigh"
-            android:visibility="invisible"
-            app:layout_constraintLeft_toRightOf="@id/topTextView"
-            app:layout_constraintRight_toLeftOf="@id/topTextView"
-            app:layout_constraintTop_toBottomOf="@id/topTextView" />
-
-        <ImageView
             android:id="@+id/iliotibialBandStretch2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="#FFC107"
-            android:src="@drawable/greencirclethigh"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/dark_grey"
+            android:src="@drawable/iliotibial_band_stretch2"
             android:visibility="invisible"
+            android:tint="@color/green"
+            app:layout_constraintLeft_toRightOf="@id/topTextView"
+            app:layout_constraintRight_toLeftOf="@id/topTextView"
+            app:layout_constraintTop_toBottomOf="@id/topTextView" />
+
+        <ImageView
+            android:id="@+id/calfStretch1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/dark_grey"
+            android:src="@drawable/calfstretch1"
+            android:visibility="invisible"
+            android:tint="@color/green"
+            app:layout_constraintLeft_toRightOf="@id/topTextView"
+            app:layout_constraintRight_toLeftOf="@id/topTextView"
+            app:layout_constraintTop_toBottomOf="@id/topTextView" />
+
+        <ImageView
+            android:id="@+id/calfStretch2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/dark_grey"
+            android:src="@drawable/calfstretch2"
+            android:visibility="invisible"
+            android:tint="@color/green"
             app:layout_constraintLeft_toRightOf="@id/topTextView"
             app:layout_constraintRight_toLeftOf="@id/topTextView"
             app:layout_constraintTop_toBottomOf="@id/topTextView" />
 
         <ImageView
             android:id="@+id/upperBodyStretch1"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="#4CAF50"
-            android:src="@drawable/greencirclethigh"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/dark_grey"
+            android:src="@drawable/upper_body_stretch1"
             android:visibility="invisible"
+            android:tint="@color/green"
+            app:layout_constraintLeft_toRightOf="@id/topTextView"
+            app:layout_constraintRight_toLeftOf="@id/topTextView"
+            app:layout_constraintTop_toBottomOf="@id/topTextView" />
+
+        <ImageView
+            android:id="@+id/upperBodyStretch2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/dark_grey"
+            android:src="@drawable/upper_body_stretch2"
+            android:visibility="invisible"
+            android:tint="@color/green"
             app:layout_constraintLeft_toRightOf="@id/topTextView"
             app:layout_constraintRight_toLeftOf="@id/topTextView"
             app:layout_constraintTop_toBottomOf="@id/topTextView" />
 
         <ImageView
             android:id="@+id/lowerBackStretch1"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="#2196F3"
-            android:src="@drawable/greencirclethigh"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/dark_grey"
+            android:src="@drawable/lower_back_stretch1"
             android:visibility="invisible"
+            android:tint="@color/green"
             app:layout_constraintLeft_toRightOf="@id/topTextView"
             app:layout_constraintRight_toLeftOf="@id/topTextView"
             app:layout_constraintTop_toBottomOf="@id/topTextView" />
 
         <ImageView
-            android:id="@+id/hipFlexor1"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="#EF0505"
-            android:src="@drawable/greencirclethigh"
+            android:id="@+id/lowerBackStretch2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/dark_grey"
+            android:src="@drawable/lower_back_stretch2"
             android:visibility="invisible"
+            android:tint="@color/green"
             app:layout_constraintLeft_toRightOf="@id/topTextView"
             app:layout_constraintRight_toLeftOf="@id/topTextView"
             app:layout_constraintTop_toBottomOf="@id/topTextView" />
 
         <ImageView
             android:id="@+id/gluteStretch1"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="#9C27B0"
-            android:src="@drawable/greencirclethigh"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/dark_grey"
+            android:src="@drawable/glutestretch1"
             android:visibility="invisible"
+            android:tint="@color/green"
             app:layout_constraintLeft_toRightOf="@id/topTextView"
             app:layout_constraintRight_toLeftOf="@id/topTextView"
             app:layout_constraintTop_toBottomOf="@id/topTextView" />
 
         <ImageView
-            android:id="@+id/hipFlexor2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="#3F51B5"
-            android:src="@drawable/greencirclethigh"
-            android:visibility="invisible"
-            app:layout_constraintLeft_toRightOf="@id/topTextView"
-            app:layout_constraintRight_toLeftOf="@id/topTextView"
-            app:layout_constraintTop_toBottomOf="@id/topTextView" />
-
-        <ImageView
-            android:id="@+id/thighStretch1"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="#2196F3"
-            android:src="@drawable/greencirclethigh"
+            android:id="@+id/gluteStretch2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/dark_grey"
+            android:src="@drawable/glutestretch2"
             android:visibility="invisible"
             app:layout_constraintLeft_toRightOf="@id/topTextView"
             app:layout_constraintRight_toLeftOf="@id/topTextView"
@@ -215,7 +232,7 @@
         <Button
             android:id="@+id/button"
             android:layout_width="86dp"
-            android:layout_height="60dp"
+            android:layout_height="80dp"
             android:gravity="center"
             android:text="@string/start_stretches"
             android:textSize="12sp"
@@ -230,6 +247,7 @@
             android:layout_marginTop="4dp"
             android:gravity="center"
             android:text="@string/empty"
+            android:fontFamily="sans-serif-medium"
             app:layout_constraintLeft_toRightOf="@id/calfStretch1"
             app:layout_constraintRight_toLeftOf="@id/calfStretch1"
             app:layout_constraintTop_toBottomOf="@id/calfStretch1" />
