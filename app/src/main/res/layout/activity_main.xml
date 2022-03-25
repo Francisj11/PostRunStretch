@@ -225,6 +225,7 @@
             android:background="@color/dark_grey"
             android:src="@drawable/glute_stretch2"
             android:visibility="invisible"
+            android:tint="@color/green"
             app:layout_constraintLeft_toRightOf="@id/topTextView"
             app:layout_constraintRight_toLeftOf="@id/topTextView"
             app:layout_constraintTop_toBottomOf="@id/topTextView" />
