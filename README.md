@@ -40,7 +40,7 @@ The stretches come from an unlisted CouchTo5k video, so to save having to look u
 
 - [x] Add functionality to keep screen on when app running
 
-- [ ] Add ability to mute sound
+- [x] Add ability to mute sound
 
 - [ ] Add countdown animation which is the circumference of the screen, reducing by 12 degrees per second.
 

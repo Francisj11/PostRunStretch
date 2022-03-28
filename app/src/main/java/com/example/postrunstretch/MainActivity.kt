@@ -21,6 +21,20 @@ class MainActivity : Activity() {
 
     private lateinit var binding: ActivityMainBinding
 
+    private fun getAppVolume(): Float
+    {
+        // Match volume to that of the system, if system muted app also mutes
+        val am = getSystemService(AUDIO_SERVICE) as AudioManager
+        var soundVolume = when (am.ringerMode)
+        {
+            AudioManager.RINGER_MODE_SILENT -> 0F;
+            AudioManager.RINGER_MODE_VIBRATE -> 0F;
+            AudioManager.RINGER_MODE_NORMAL -> 1F;
+            else -> 0F
+        }
+        return soundVolume
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -66,7 +80,7 @@ class MainActivity : Activity() {
             val image1 = findViewById<ImageView>(id1)
             image1.visibility = View.VISIBLE
 
-            shortbing?.play(soundId, 1F, 1F, 0, 0, 1F)
+            shortbing?.play(soundId, getAppVolume(), getAppVolume(), 0, 0, 1F)
             bottomTextView.visibility = View.VISIBLE
             bottomTextView.text = "Stretch 1/" + listOfStretchImages.size
 
@@ -97,7 +111,7 @@ class MainActivity : Activity() {
                     if (iterations < (listOfStretchImages.size))
                     {
                         // Play sound
-                        shortbing?.play(soundId, 1F, 1F, 0, 0, 1F)
+                        shortbing?.play(soundId, getAppVolume(), getAppVolume(), 0, 0, 1F)
                         this.start()
                     }
                     else
@@ -106,7 +120,7 @@ class MainActivity : Activity() {
                         val id1    = listOfStretchImages.last()
                         val image1 = findViewById<ImageView>(id1)
                         image1.visibility    = View.INVISIBLE
-                        tada?.play(soundId, 1F, 1F, 0, 0, 1F)
+                        tada?.play(soundId, getAppVolume(), getAppVolume(), 0, 0, 1F)
                         topTextView.text  = "You're finished!"
                         bottomTextView.visibility = View.INVISIBLE
 
