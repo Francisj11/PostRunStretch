@@ -38,7 +38,7 @@ The stretches come from an unlisted CouchTo5k video, so to save having to look u
 
 - [ ] Add ability to return to the previous stretch
 
-- [ ] Add functionality to keep screen on when app running
+- [x] Add functionality to keep screen on when app running
 
 - [ ] Add ability to mute sound
 
