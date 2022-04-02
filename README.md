@@ -6,6 +6,8 @@ This is a small project to add a WearOS app which runs through a few stretches t
 
 The stretches come from an unlisted CouchTo5k video, so to save having to look up that video each time; why not have it on the watch which will be used for tracking activity.
 
+https://www.buymeacoffee.com/francismurtagh
+
 # TODO:
 
 - [x] Get stretch icons in 80x80dp, possibly from fiverr, for the different stretches which include:
